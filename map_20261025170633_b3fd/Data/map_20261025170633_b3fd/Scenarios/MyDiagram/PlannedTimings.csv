@@ -1,0 +1,2 @@
+trainId,seq,stationId,trackCircuitId,trackNo,arrival,departure,isPass
+TR_NEW0,0,S_012,TC_0097,2,18:00:00,18:00:00,false

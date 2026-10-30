@@ -1,0 +1,7 @@
+id,displayName,nameEn,abbrev2,abbrev1,abbrev2En,abbrev1En,diagramColor
+local,普通,Local,普通,普,Lo,L,#1A1A1A
+rapid,快速,Rapid,快速,快,Rp,R,#FF6BB3
+express,急行,Express,急行,急,Ex,E,#FF8C1A
+limited_express,特急,Ltd. Express,特急,特,Lt,L,#F24D4D
+kakueki,各駅停車,Local,各停,各,Lo,L,#1E6FD9
+out_of_service,回送,Out of Service,回送,回,OS,O,#8C8C8C

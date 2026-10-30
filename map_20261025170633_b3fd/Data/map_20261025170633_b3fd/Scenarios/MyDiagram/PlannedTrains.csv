@@ -1,0 +1,2 @@
+trainId,trainNumber,classId,typeId,destStationId,direction,nextTrainId,routeTrackIds,switchOverrides,destExplicit,stopOverrides,stopPatternOverrides,heldDest
+TR_NEW0,1,express,TT_001,S_012,-1,,TC_0097;TC_0101;TC_0099;TC_0107,,false,,,

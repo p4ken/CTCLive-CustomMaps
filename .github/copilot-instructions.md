@@ -32,3 +32,4 @@
 ## 外部資料
 
 - 駅間距離：[2003年の小田急小田原線の資料](https://tanaken73.gozaru.jp/database/o-odawara.html)
+- 軌道回路(閉塞)：[BVE小田急線](~/Downloads/odakyuline_yuen_dds)

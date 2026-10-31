@@ -17,5 +17,5 @@ S_015,向ヶ丘遊園,遊園,遊,true,TC_0131;TC_0132,true
 S_016,向ヶ丘遊園,遊園,遊,true,TC_0141;TC_0142,true
 S_017,遊園引き上げ線,庫A,A,false,TC_0150,true
 S_018,新百合ヶ丘,新百,新,true,TC_0168;TC_0167;TC_0166;TC_0165,true
-S_019,下北沢,下北,下,true,TC_0081,true
-S_020,下北沢,下北,下,true,TC_0090,true
+S_019,下北沢,下北,下,true,TC_0081;TC_0183,true
+S_020,下北沢,下北,下,true,TC_0184;TC_0090,true

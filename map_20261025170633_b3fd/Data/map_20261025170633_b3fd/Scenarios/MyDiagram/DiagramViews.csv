@@ -1,5 +1,5 @@
 id,name,stationIds,expandedStationIds,showStations,showDepots,originStationId
 all,全線,,,true,true,
-auto_main,本線,S_002;S_004;S_006;S_008;S_020;S_010;S_011;S_014;S_016;S_018,,true,true,
+auto_main,本線,S_022;S_002;S_004;S_006;S_008;S_020;S_010;S_011;S_014;S_016;S_018,,true,true,
 auto_via_S_003,豪徳寺方面,S_003;S_005;S_007;S_019;S_009;S_011,,true,true,S_003
-auto_via_S_015,遊園方面,S_001;S_003;S_005;S_007;S_019;S_009;S_011;S_013;S_015,,true,true,S_015
+auto_via_S_015,遊園方面,S_021;S_001;S_003;S_005;S_007;S_019;S_009;S_011;S_013;S_015,,true,true,S_015

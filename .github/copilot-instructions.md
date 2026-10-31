@@ -1,29 +1,34 @@
-# CustomMaps workspace instructions
+# CustomMaps 作業ルール
 
-These instructions apply to all Copilot work in this repository.
+## データの扱い
 
-## Preserve game data
+- このリポジトリのファイルはゲームデータです。
+- CSVを編集するときは、文字コード、BOM、改行コード、列の順序、末尾の空列、値の書式をそのまま保ちます。
+- ユーザーが動作を確認したら、gitコミットを作ります。mdやゲーム側による整形も一緒に含めます。
+- 動作確認できた新たな知見は、積極的にmdに反映してください。
 
-- Treat files in this repository as game data. Before editing a CSV, inspect and preserve its encoding, byte-order mark, line endings, column order, trailing empty columns, and value formatting. Make targeted edits; do not normalize unrelated rows.
-- Review the resulting diff for unintended formatting or game-save changes. Preserve pre-existing changes and do not stage or commit unrelated files unless requested.
-- Validate the changed data with available checks. Do not claim in-game behavior was verified unless it was tested in the game.
-- Create a git commit after the user confirmed that the behavior is correct.
+## リポジトリとマップ
 
-## Repository and map context
+- `steam_autocloud.vdf` は Steam が自動生成するファイルで、Git の対象外です。
+- 比較用マップ: 東京モノレールのワークショップマップ(ID `3812026627`)は、リポジトリの外の `C:\Program Files (x86)\Steam\steamapps\workshop\content\4932180\3812026627` にあります。データは `Data` の中です。
+- 小田急川崎線のマップは `map_20261025170633_b3fd` です。
+  - データ: `map_20261025170633_b3fd\Data\map_20261025170633_b3fd`
+  - 作業中の時刻表: 上記の `Scenarios\MyDiagram`
 
-- This repository is the Git-tracked `CustomMaps` directory under `%USERPROFILE%\AppData\LocalLow\Tadimaru\CTCLive\CustomMaps`, on branch `main`.
-- Steam generates `steam_autocloud.vdf`; it is ignored by Git.
-- The Tokyo Monorail Workshop map with ID `3812026627` is installed outside this repository at `C:\Program Files (x86)\Steam\steamapps\workshop\content\4932180\3812026627`; its data is under `Data`. Use it as a comparison map when useful, and verify files there before relying on its contents.
-- The 小田急川崎線 map is `map_20261025170633_b3fd`. Its data is under `map_20261025170633_b3fd\Data\map_20261025170633_b3fd`; its working timetable is under `map_20261025170633_b3fd\Data\map_20261025170633_b3fd\Scenarios\MyDiagram`.
-- The user confirmed in-game that the repaired train runs 表参道 -> 代々木上原 (stop) -> 新百合ヶ丘. The timetable times are estimates, not real-world timings.
-- The recorded route uses `TC_0058`, which is bidirectional, for the train whose direction is `-1`. Treat these as current map facts and verify the referenced files before relying on them after further edits.
-- The user confirmed in-game that adjusting the 小田急川崎線 distances improved the diagram. Diagram station positions are based on shortest-path distances through the track-circuit graph from the origin, not `DiagramViews.csv` station order or only the planned train route. When calibrating station spacing, check alternate/shortcut paths and both platform tracks as well as the planned route.
-- Keep visual geometry separate from operational logic. When a game check reports a data error, identify the exact field and data source the check evaluates before editing; do not change map coordinates or platform geometry to fix a logical constraint. For platform-length checks, the relevant operational length is `track_circuits.csv`'s `length` for the station's platform track circuits, not the dimensions of its polygon in `coordinates.csv`.
-- The distance reference used for 新宿〜新百合ヶ丘 is the [2003 小田急小田原線 source](https://tanaken73.gozaru.jp/database/o-odawara.html); cumulative km are 新宿 0.0, 南新宿 0.8, 参宮橋 1.5, 代々木八幡 2.7, 代々木上原 3.5, 東北沢 4.2, 下北沢 4.9, 世田谷代田 5.6, 梅ヶ丘 6.3, 豪徳寺 7.0, 経堂 8.0, 千歳船橋 9.2, 祖師ヶ谷大蔵 10.6, 成城学園前 11.6, 喜多見 12.7, 狛江 13.8, 和泉多摩川 14.4, 登戸 15.2, 向ヶ丘遊園 15.8, 生田 17.9, 読売ランド前 19.2, 百合ヶ丘 20.5, 新百合ヶ丘 21.5. Treat these as reference values, not modern operating data.
+## 小田急川崎線の現状(ゲーム内で確認済み)
 
-## CSV format context
+- 列車は 表参道 → 代々木上原(停車) → 新百合ヶ丘 の順に走ります。時刻表の時刻は推定値で、実際の所要時間ではありません。
+- 方向が `-1` の列車は、双方向の `TC_0058` を通る経路です。
+- 駅間距離を調整したところ、ダイヤグラムが改善しました。
+- ダイヤグラム上の駅の位置は、起点から軌道回路グラフをたどった最短経路の距離で決まります。`DiagramViews.csv` の駅順や、予定列車の経路だけでは決まりません。駅間隔を調整するときは、別経路や近道、両方のホーム線も確認します。
 
-- `PlannedTrains.csv` includes fields such as `destStationId`, `direction`, `routeTrackIds`, `switchOverrides`, and `destExplicit`; `routeTrackIds` is a semicolon-separated sequence of track-circuit IDs.
-- `PlannedTimings.csv` rows include train, sequence, station, track circuit, track number, arrival, departure, and pass status.
-- `routes.csv` includes start/end lever IDs, track-circuit IDs, switch instructions, and conflict-route IDs.
-- These examples establish file structure and specific working values, not complete format rules. Treat interpretations as provisional, check comparable maps such as Tokyo Monorail Workshop map `3812026627`, and verify behavior in game.
+## CSVの形式メモ
+
+- `PlannedTrains.csv`: `destStationId`、`direction`、`routeTrackIds`、`switchOverrides`、`destExplicit` などの列があります。`routeTrackIds` は軌道回路IDをセミコロンでつないだものです。
+- `PlannedTimings.csv`: 列車、順序、駅、軌道回路、線路番号、到着、出発、通過かどうか、の行です。
+- `routes.csv`: 始点と終点のレバーID、軌道回路ID、分岐器の指定、競合する進路のIDなどがあります。
+-  ホーム長のチェックで見られているのは、駅のホームの軌道回路について `track_circuits.csv` の `length` です。`coordinates.csv` のポリゴンの大きさではありません。
+
+## 外部資料
+
+- 駅間距離：[2003年の小田急小田原線の資料](https://tanaken73.gozaru.jp/database/o-odawara.html)

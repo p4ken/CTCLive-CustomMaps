@@ -20,3 +20,4 @@ SW_022,,SingleTurnout,TC_0327,,TC_0328,,Straight
 SW_023,,SingleTurnout,TC_0331,,TC_0332,,Straight
 SW_025,,SingleTurnout,TC_0336,,TC_0337,,Straight
 SW_026,,DoubleCrossover,TC_0343,TC_0344,TC_0345,TC_0346,Straight
+SW_027,,DoubleCrossover,TC_0335,TC_0340,TC_0342,TC_0341,Straight

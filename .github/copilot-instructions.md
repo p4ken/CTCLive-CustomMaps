@@ -31,5 +31,7 @@
 
 ## 外部資料
 
+- 公式マニュアル：[マップ作成・くわしい編 | 鉄道運行管理シミュレーターPro](https://tadimaru.com/pro-support/map-editor-advanced.html)
+- 配線図：[小田急電鉄小田原線 - 配線略図.net](https://www.haisenryakuzu.net/documents/pr/odakyu/odawara/)
 - 駅間距離：[2003年の小田急小田原線の資料](https://tanaken73.gozaru.jp/database/o-odawara.html)
 - 軌道回路(閉塞)：[BVE小田急線](~/Downloads/odakyuline_yuen_dds)

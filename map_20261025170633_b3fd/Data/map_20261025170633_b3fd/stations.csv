@@ -6,7 +6,7 @@ S_007,代田,代田,代,true,TC_0037;TC_0040,true,false
 S_009,上原,上原,上,true,TC_0044;TC_0043;TC_0056;TC_0055,true,false
 S_013,登戸,登戸,登,true,TC_0109;TC_0108;TC_0120;TC_0121,true,false
 S_015,遊園,遊園,遊,true,TC_0131;TC_0132;TC_0141;TC_0142,true,false
-S_017,遊園引き上げ線,庫A,A,false,TC_0150,true,false
+S_017,遊園Y線,遊Y,遊,false,TC_0150,true,false
 S_018,新百合,新百,新,true,TC_0168;TC_0167;TC_0166;TC_0165,true,false
 S_019,下北沢,下北,下,true,TC_0081;TC_0183;TC_0184;TC_0090,true,false
 S_021,成城学園前,成城,成,true,TC_0185;TC_0187;TC_0189;TC_0191,true,false

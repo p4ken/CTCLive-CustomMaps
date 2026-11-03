@@ -2,5 +2,5 @@ key,value
 format_version,1
 lineName,小田急川崎線
 lineMaxSpeedKmh,120
-originStationId,S_011
+originStationId,S_040
 roundingUnitSec,5

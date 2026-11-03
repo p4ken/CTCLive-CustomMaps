@@ -9,7 +9,7 @@ S_015,遊園,遊園,遊,true,TC_0131;TC_0132;TC_0141;TC_0142,true,false
 S_017,遊園Y線,遊Y,遊,false,TC_0150,true,false
 S_018,新百合,新百,新,true,TC_0168;TC_0167;TC_0166;TC_0165,true,false
 S_019,下北沢,下北,下,true,TC_0081;TC_0183;TC_0184;TC_0090,true,false
-S_021,成城学園前,成城,成,true,TC_0185;TC_0187;TC_0189;TC_0191,true,false
+S_021,成城,成城,成,true,TC_0185;TC_0187;TC_0189;TC_0191,true,false
 S_023,船橋,船橋,船,true,TC_0186;TC_0192,true,false
 S_025,大蔵,大蔵,大,true,TC_0195;TC_0199,true,false
 S_027,喜多見,喜多,喜,true,TC_0205;TC_0209,true,false

@@ -24,6 +24,7 @@
 
 ## CSVの形式メモ
 
+- `platforms.csv` のラベル列はマップ編集画面のホーム矩形に表示する文字、`track_numbers.csv` の `trackNo` は軌道回路ごとの線路番号です。別系統なので片方の修正で他方は変わりません。番号を直すときは両方を独立に確認し、小田急川崎線では駅ごとに軌道を座標上の上から順に1, 2, ...とします。
 - `PlannedTrains.csv`: `destStationId`、`direction`、`routeTrackIds`、`switchOverrides`、`destExplicit` などの列があります。`routeTrackIds` は軌道回路IDをセミコロンでつないだものです。
 - `PlannedTimings.csv`: 列車、順序、駅、軌道回路、線路番号、到着、出発、通過かどうか、の行です。
 - `routes.csv`: 始点と終点のレバーID、軌道回路ID、分岐器の指定、競合する進路のIDなどがあります。

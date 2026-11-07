@@ -1,17 +1,4 @@
 id,displayName,type,straightUp,straightDown,reverse1,reverse2,currentPosition
-SW_001,,DoubleCrossover,TC_0009,TC_0010,TC_0011,TC_0012,Straight
-SW_002,,DoubleCrossover,TC_0021,TC_0022,TC_0023,TC_0024,Straight
-SW_009,,DoubleCrossover,TC_0112,TC_0113,TC_0114,TC_0115,Straight
-SW_010,,SingleTurnout,TC_0123,,TC_0124,,Straight
-SW_011,,DoubleCrossover,TC_0127,TC_0128,TC_0129,TC_0130,Straight
-SW_012,,SingleTurnout,TC_0144,,TC_0145,,Straight
-SW_013,,SingleTurnout,TC_0147,,TC_0148,,Straight
-SW_014,,SingleTurnout,TC_0158,,TC_0159,,Straight
-SW_015,,SingleTurnout,TC_0160,,TC_0161,,Straight
-SW_016,,MultiWay,TC_0162,,TC_0163,TC_0164,Straight
-SW_017,,DoubleCrossover,TC_0171,TC_0172,TC_0173,TC_0174,Straight
-SW_018,,SingleTurnout,TC_0175,,TC_0176,,Straight
-SW_019,,SingleTurnout,TC_0177,,TC_0178,,Straight
 SW_023,,SingleTurnout,TC_0331,,TC_0332,,Straight
 SW_025,,SingleTurnout,TC_0336,,TC_0337,,Straight
 SW_026,,DoubleCrossover,TC_0343,TC_0344,TC_0345,TC_0346,Straight

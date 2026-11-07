@@ -4,7 +4,7 @@ S_003,豪徳寺,豪徳,豪,true,TC_0025;TC_0028,true,false
 S_005,梅ヶ丘,梅ヶ,梅,true,TC_0031;TC_0034,true,false
 S_007,代田,代田,代,true,TC_0037;TC_0040,true,false
 S_009,上原,上原,上,true,TC_0044;TC_0043;TC_0056;TC_0055,true,false
-S_013,登戸,登戸,登,true,TC_0109;TC_0108;TC_0120;TC_0121,true,false
+S_013,登戸,登戸,登,true,TC_0109;TC_0108;TC_0671;TC_0668,true,false
 S_015,遊園,遊園,遊,true,TC_0131;TC_0132;TC_0141;TC_0142,true,false
 S_017,遊園Y線,遊Y,遊,false,TC_0150,true,false
 S_018,新百合,新百,新,true,TC_0168;TC_0167;TC_0166;TC_0165,true,false
@@ -32,3 +32,5 @@ S_048,霞ケ関,霞ケ,霞,true,TC_0074;TC_0073,true,false
 S_049,千代田線,千代,千,true,TC_0351;TC_0352,true,true
 S_050,上原留置,上原,上,false,TC_0389;TC_0390,true,false
 S_002,東北沢,東北,東,true,TC_0049;TC_0050,true,false
+S_051,経堂留置,経堂,経,false,TC_0481;TC_0480;TC_0479,true,false
+S_052,喜多見検,,,true,TC_0609;TC_0624,true,true

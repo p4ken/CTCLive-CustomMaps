@@ -1,7 +1,4 @@
 id,displayName,type,coordinateId,protectedTrackCircuitIds,governingRouteId,nextSignalIds,yConditions,ygConditions,yyConditions,holdClearConditions,isCoupling,isTwoLight
-SG_185,TC_0228,Block,C_0756,TC_0228,,,,,,,False,False
-SG_186,TC_0229,Block,C_0757,TC_0229,,,,,,,False,False
-SG_187,TC_0230,Block,C_0758,TC_0230,,,,,,,False,False
 SG_265,TC_0321,Block,C_0911,TC_0321,,,,,,,False,False
 SG_053,TC_0075,Block,C_0288,TC_0075,,,TC_0076=R,TC_0076=Y,,,False,False
 SG_054,TC_0076,Block,C_0289,TC_0076,,,TC_0072=R,TC_0072=Y,,,False,False

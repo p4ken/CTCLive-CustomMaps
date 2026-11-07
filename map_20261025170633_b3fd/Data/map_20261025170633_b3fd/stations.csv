@@ -18,7 +18,6 @@ S_031,和泉,和泉,和,true,TC_0201;TC_0212,true,false
 S_033,生田,生田,生,true,TC_0215;TC_0220,true,false
 S_034,ランド,ラン,ラ,true,TC_0217;TC_0222,true,false
 S_035,百合丘,百合,百,true,TC_0219;TC_0224,true,false
-S_036,東北沢,東北,東,true,TC_0049;TC_0062,true,false
 S_037,八幡,八幡,八,true,TC_0305;TC_0306,true,false
 S_038,参宮橋,参宮,参,true,TC_0104;TC_0105,true,false
 S_039,南新宿,南新,南,true,TC_0307;TC_0308,true,false
@@ -31,3 +30,5 @@ S_046,赤坂,赤坂,赤,true,TC_0070;TC_0069,true,false
 S_047,国会,国会,国,true,TC_0072;TC_0071,true,false
 S_048,霞ケ関,霞ケ,霞,true,TC_0074;TC_0073,true,false
 S_049,千代田線,千代,千,true,TC_0351;TC_0352,true,true
+S_050,上原留置,上原,上,false,TC_0389;TC_0390,true,false
+S_002,東北沢,東北,東,true,TC_0049;TC_0050,true,false

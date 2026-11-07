@@ -34,3 +34,5 @@ S_050,上原留置,上原,上,false,TC_0389;TC_0390,true,false
 S_002,東北沢,東北,東,true,TC_0049;TC_0050,true,false
 S_051,経堂留置,経堂,経,false,TC_0481;TC_0480;TC_0479,true,false
 S_052,喜多見検,,,true,TC_0609;TC_0624,true,true
+S_053,小田原線,小田,小,true,TC_0762;TC_0750;TC_0763;TC_0764,true,true
+S_054,新百引上,新百,新,false,TC_0777;TC_0776,true,false

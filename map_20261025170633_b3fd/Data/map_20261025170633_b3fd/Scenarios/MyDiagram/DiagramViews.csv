@@ -1,4 +1,4 @@
 id,name,stationIds,expandedStationIds,showStations,showDepots,originStationId
 all,全線,,,true,true,
-view2,川崎線,S_040;S_039;S_038;S_037;S_009;S_036;S_019;S_007;S_001;S_005;S_003;S_023;S_025;S_021;S_027;S_013;S_029;S_031;S_015;S_017;S_033;S_034;S_035;S_018,,true,true,S_040
+view2,川崎線,S_040;S_039;S_038;S_037;S_009;S_002;S_019;S_007;S_005;S_001;S_003;S_023;S_025;S_021;S_027;S_029;S_013;S_031;S_015;S_017;S_033;S_034;S_035;S_018,,true,true,S_040
 view1,千代田線,S_009;S_011;S_012;S_044;S_045;S_046;S_047;S_048;S_049,,true,true,S_049
